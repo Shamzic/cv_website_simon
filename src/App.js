@@ -10,18 +10,20 @@ class App extends Component {
       <div className="App">
         <div className="demo-big-content">
           <Layout>
-            <Header title="Title" scroll>
+            <Header title="Simon Hamery" className="header-color" scroll>
               <Navigation>
+                  <Link to="/">Home</Link>
                   <Link to="/resume">Resume</Link>
                   <Link to="/projects">Projects</Link>
                   <Link to="/aboutme">About Me</Link>
                   <Link to="/contact">Contact</Link>
               </Navigation>
             </Header>
-            <Drawer title="Title">
+            <Drawer title="Menu">
               <Navigation>
-                <Link to="/landingpage">Landing</Link>
+                <Link to="/">Home</Link>
                 <Link to="/resume">Resume</Link>
+                <Link to="/projects">Projects</Link>
                 <Link to="/aboutme">About</Link>
                 <Link to="/contact">Contact</Link>
               </Navigation>

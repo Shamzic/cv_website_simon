@@ -1,15 +1,76 @@
-.App {
-  
+.header-color, .landing-grid {
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
+.landing-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
 }
 
-.App-header {
+.avatar-img {
+  margin-top: 10%;
+  margin-left: 1%;
+  width: 12%;
+  border-radius:50%;
 }
 
-.App-link {
+
+.banner-text {
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
+.banner-text  h1{
+  font-size: 350%;
+  font-weight: bold;
+  color:white;
+  padding: 1%;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 350%;
+  padding: 12px;
+}
+
+@media screen and (max-width: 580px) {
+  .social-links i {
+    font-size: 150%;
+      padding: 8px;
+  }
+
+  .banner-text  h1{
+    font-size: 30px;
+    padding: 10%;
+  }
 }
