@@ -11,7 +11,7 @@ export default class Resume extends Component{
               <img
                 src="https://media.licdn.com/dms/image/C4E03AQF4CW2UHOdTig/profile-displayphoto-shrink_200_200/0?e=1551312000&v=beta&t=S0d5ma29kon0YKY6uN6RC1l7ZhlKQ4atZcZhVeEl_xY"
                 alt="avatar"
-                style={{height: '25%'}}
+                style={{height: '25%',borderRadius: '10%'}}
               />
             <p>
               You can contact me at anytime by phone, mail, Skype and Discord.
