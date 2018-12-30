@@ -16,9 +16,9 @@
 }
 
 .avatar-img {
-  margin-top: 10%;
+  margin-top: 7%;
   margin-left: 1%;
-  width: 12%;
+  width: 17%;
   border-radius:50%;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .banner-text  h1{
-  font-size: 350%;
+  font-size: 3.5em;
   font-weight: bold;
   color:white;
   padding: 1%;
@@ -63,7 +63,11 @@
   padding: 12px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 680px) {
+  .avatar-img {
+    width: 35%;
+  }
+
   .social-links i {
     font-size: 150%;
       padding: 8px;
@@ -73,4 +77,102 @@
     font-size: 30px;
     padding: 10%;
   }
+
+  .projects-grid {
+    flex-direction: column;
+  }
+
+  .category-tabs {
+    margin-top: 12%;
+  }
+}
+
+.projects-grid {
+  display: flex;
+  margin-top: 2%;
+}
+
+/* Button style     */
+/* effect-underline */
+.effect-underline {
+  display: inline-block;
+  position: relative;
+}
+
+div.effect-underline:after {
+  align: center;
+  text-align: center;
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 12px;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 30px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+div.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* Contact Page */
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+  overflow: hidden;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: black;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.contact-grid h2  {
+  font-family: 'Anton', sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+ .contact-grid img {
+padding-bottom: 2em;
+}
+ .contact-grid p {
+   font-family: 'Oxygen', sans-serif;
+   font-weight: bold;
+   text-align: center;
+   width: 80%;
+   padding-left: 10%;
+ }
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+}
+
+.contact-list {
+  /*background: grey;*/
+  min-width: 350px;
+}
+
+.contact-list i {
+  font-size: 38px;
+  padding-right: 30px;
 }
