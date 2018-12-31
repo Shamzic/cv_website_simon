@@ -89,10 +89,6 @@
     padding: 10%;
   }
 
-  .projects-grid {
-    flex-direction: column;
-  }
-
   .category-tabs {
     margin-top: 12%;
   }
@@ -100,7 +96,13 @@
 
 .projects-grid {
   display: flex;
-  margin-top: 2%;
+  flex-wrap: wrap;
+  justify-content:  flex-start;
+}
+
+.projects-card {
+  margin-right: 1%;
+  margin-top: 1%;
 }
 
 /* Button style     */
@@ -159,15 +161,15 @@ div.effect-underline:hover:after {
 
 
 .contact-grid h2  {
-  font-family: 'Anton', sans-serif;
-  font-size: 3.5em;
+   font-family: 'Arial', sans-serif;
+  font-size: 2em;
   font-weight: bold;
 }
  .contact-grid img {
 margin-bottom: 2em;
 }
  .contact-grid p {
-   font-family: 'Oxygen', sans-serif;
+   font-family: 'Lato', sans-serif;
    font-weight: bold;
    text-align: center;
    width: 80%;
@@ -180,10 +182,44 @@ margin-bottom: 2em;
 
 .contact-list {
   /*background: grey;*/
+  font-family: 'Lato', sans-serif;
   min-width: 350px;
 }
 
 .contact-list i {
   font-size: 38px;
   padding-right: 30px;
+}
+
+/* Resume page CSS */
+.resume-body {
+  padding-top: 2em;
+}
+
+.resume-left-col {
+  min-width: 380px;
+}
+
+.resume-right-col {
+  background-color: #27221F;
+  color: white;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.resume-avatar {
+  width: 70%;
+  border-radius: 15%;
+}
+
+@media screen and (max-width: 680px) {
+  .resume-body {
+    padding-top: 2em;
+  }
+}
+
+/* Exeperience CSS */
+.jobDescription {
+  width: 74%;
+  text-align: justify;
 }

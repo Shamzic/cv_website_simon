@@ -14,12 +14,12 @@ export default class Resume extends Component{
                 style={{height: '25%',borderRadius: '10%'}}
               />
             <p>
-              You can contact me at anytime by phone, mail, Skype and Discord.
-
+              "Communication is the key of success."
             </p>
             <p>
-              "Communication is the key of succes."
+              Contact me at anytime by phone, mail,
             </p>
+            <p>Skype and Discord.</p>
 
             </Cell>
             <Cell coll={8} tablet={8}>
@@ -28,25 +28,25 @@ export default class Resume extends Component{
               <div className="contact-list">
                 <List>
                   <ListItem>
-                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Lato'}}>
                       <i className="fa fa-phone-square" aria-hidden="true"/>
                        +33 6 04 14 39 33
                     </ListItemContent>
                   </ListItem>
                   <ListItem>
-                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Lato'}}>
                       <i className="fa fa-envelope" aria-hidden="true"/>
                        shamery@free.fr
                     </ListItemContent>
                   </ListItem>
                   <ListItem>
-                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Lato'}}>
                       <i className="fab fa-discord" aria-hidden="true"/>
                       shamzic
                     </ListItemContent>
                   </ListItem>
                   <ListItem>
-                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                    <ListItemContent style={{fontSize: '30px', fontFamily: 'Lato'}}>
                       <i className="fab fa-skype" aria-hidden="true"/>
                        shamery_7
                     </ListItemContent>
