@@ -20,9 +20,21 @@ export default class Resume extends Component{
             <h2 style={{padding: '1em'}}>Simon Hamery</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #E48728', width: '50%'}}/>
-            <p>
-              Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker
-            </p>
+            <div style={{textAlign: 'justify'}}>
+              <p>
+                I am a french computer scientist. I have studied in 5 different universities and learned how to learn. I can now program and learn any other new technology.
+              </p>
+              <p>
+                My main goals are to become 100% free, create my own company, and travel all over the world.
+              </p>
+              <p>
+                I love biking, you can acces to my Strava profile on the home page. I also love playing the piano and making and editing videos. There is also a link to my YouTube channel on the home page.
+              </p>
+              <p>
+                It would be a pleasure to speak with you if you want to know more about me. You can easily get all the informations to contact me on the contact page.
+                In the meantime you can see my resume and download my full CV on this page. Tadam ! (-:
+              </p>
+            </div>
             <hr style={{borderTop: '3px solid #E48728', width: '50%'}}/>
             <h5>Phone</h5>
             <p>+33604143933</p>

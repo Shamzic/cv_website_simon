@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Project from './project'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from 'react-mdl'
 
 export default class Projects extends Component{
@@ -8,78 +9,54 @@ export default class Projects extends Component{
   }
 
   toggleCategories() {
-    if(this.state.activeTab === 0) {
+    if(this.state.activeTab === 0) { {/* WEB */}
       return (
         <div className="projects-grid">
-        {/* Project 1*/}
-        <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-          <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>React Project #1</CardTitle>
-          <CardText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </CardText>
-          <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>LiveDemo</Button>
-          </CardActions>
-          <CardMenu style={{color: '#ffff'}}>
-          <IconButton name="share"/>
-          </CardMenu>
-      </Card>
 
-      {/* Project 2*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>React Project #2</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-    </Card>
+          {/* Project 0 */}
+          <Project
+            projectImageLink="/FitPlanner/imageProject.png"
+            projectTitle="ReactJS Project : FitPlanner"
+            projectDescription="FitPlanner is a musculation website based on ReactJS and GraphQL Technologies.
+                                You can create personnal programs and trainings adapted to you. Click on a muscle and add an exercise
+                                associated to your program."
+            titleColor="black"
+            textColor="white"
+            backColor="#222222"
+            projectGithubLink="https://github.com/Shamzic/FitPlannerWeb"
+            projectLiveDemoLink="">
+          </Project>
 
-    {/* Project 3*/}
-    <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-      <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>React Project #3</CardTitle>
-      <CardText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </CardText>
-      <CardActions border>
-          <Button colored>Github</Button>
-          <Button colored>CodePen</Button>
-          <Button colored>LiveDemo</Button>
-      </CardActions>
-      <CardMenu style={{color: '#ffff'}}>
-      <IconButton name="share"/>
-      </CardMenu>
-  </Card>
+          {/* Project 1 */}
+          <Project
+            projectImageLink="/Pradeoscopemanager/pradeoscopemanager.png"
+            projectTitle="VueJS Project : Pradeoscope Manager"
+            projectDescription="Pradeoscopemanager is a sharing multiplateform application. The user can send messages and images to the application and every user connected to the web app or the phone app (IOs or Android) will see the message and can post a like on it"
+            titleColor="black"
+            textColor="white"
+            backColor="#222222"
+            projectGithubLink="https://github.com/Shamzic/pradeoscopemanager"
+            projectLiveDemoLink="https://pradeoscope.firebaseapp.com/">
+          </Project>
 
-  {/* Project 4*/}
-  <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-    <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>React Project #4</CardTitle>
-    <CardText>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </CardText>
-    <CardActions border>
-        <Button colored>Github</Button>
-        <Button colored>CodePen</Button>
-        <Button colored>LiveDemo</Button>
-    </CardActions>
-    <CardMenu style={{color: '#ffff'}}>
-    <IconButton name="share"/>
-    </CardMenu>
-</Card>
+          {/* Project 2 */}
+          <Project
+            projectImageLink="/eurekart/eurekart.png"
+            projectDescription="Eurekart is a web platform where user can search or offer thier services in the fields of art and cultur.
+            Thanks to a map, they can pick up and offer with the exact location and then meet people in real life. This project was done in 40 hours during a Hackathon at Saguenay in Canada."
+            projectTitle="ReactJS Project : Eurekart"
+            titleColor="black"
+            textColor="white"
+            backColor="#222222"
+            projectGithubLink="https://github.com/TanguyHardelin/Hackaton-2018"
+            projectLiveDemoLink="https://hackton-2018.firebaseapp.com">
+          </Project>
 
   </div>
       )
-    } else if(this.state.activeTab === 1) { {/* JAVASCRIPT */}
+    } else if(this.state.activeTab === 1) { {/* C++ */}
       return(
-        <div className="projects-grid">
+        <div className="projects-grid" style={{}}>
         {/* Project 1*/}
         <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
           <CardTitle style={{color: 'black', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png) center / cover' }}>Javascript Project #1</CardTitle>
@@ -115,52 +92,6 @@ export default class Projects extends Component{
       {/* Project 3*/}
       <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
             <CardTitle style={{color: 'black', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png) center / cover' }}>Javascript Project #3</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-      </Card>
-
-      {/* Project 4*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-              <CardTitle style={{color: 'black', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png) center / cover' }}>Javascript Project #4</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-      </Card>
-      {/* Project 5*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-              <CardTitle style={{color: 'black', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png) center / cover' }}>Javascript Project #5</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-      </Card>
-      {/* Project 6*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-              <CardTitle style={{color: 'black', height: '176px', background: 'url(https://cdn-images-1.medium.com/max/1600/1*TWVs8hNCI7B7t2Y4tA-u1A.png) center / cover' }}>Javascript Project #6</CardTitle>
         <CardText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </CardText>
@@ -226,52 +157,6 @@ export default class Projects extends Component{
         </CardMenu>
       </Card>
 
-      {/* Project 4*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-              <CardTitle style={{color: 'black', height: '176px', background: 'url(https://d2tycqyw09ngo1.cloudfront.net/be-content/uploads/2016/11/27173033/Curso-Online-de-Orienta%C3%A7%C3%A3o-a-Objetos-com-Java-principal-1.png) center / cover' }}>Javascript Project #4</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-      </Card>
-
-      {/* Project 5*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-              <CardTitle style={{color: 'black', height: '176px', background: 'url(https://d2tycqyw09ngo1.cloudfront.net/be-content/uploads/2016/11/27173033/Curso-Online-de-Orienta%C3%A7%C3%A3o-a-Objetos-com-Java-principal-1.png)  center / cover' }}>Javascript Project #5</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-      </Card>
-      {/* Project 6*/}
-      <Card className="projects-card" shadow={5} style={{minWidth: '350px'}}>
-              <CardTitle style={{color: 'black', height: '176px', background: 'url(https://d2tycqyw09ngo1.cloudfront.net/be-content/uploads/2016/11/27173033/Curso-Online-de-Orienta%C3%A7%C3%A3o-a-Objetos-com-Java-principal-1.png)  center / cover' }}>Javascript Project #6</CardTitle>
-        <CardText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </CardText>
-        <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>LiveDemo</Button>
-        </CardActions>
-        <CardMenu style={{color: '#ffff'}}>
-        <IconButton name="share"/>
-        </CardMenu>
-      </Card>
     </div>
       )
     } else if(this.state.activeTab === 3) {
@@ -317,10 +202,10 @@ export default class Projects extends Component{
     return (
       <div className="category-tabs">
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
+          <Tab>Web</Tab>
           <Tab>Javascript</Tab>
           <Tab>Java</Tab>
-          <Tab>C++</Tab>
+          <Tab>Video Games</Tab>
         </Tabs>
 
           <Grid>
