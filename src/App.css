@@ -216,6 +216,9 @@ margin-bottom: 2em;
   .resume-body {
     padding-top: 2em;
   }
+  .resume-left-col {
+    min-width: 50px;
+  }
 }
 
 /* Exeperience CSS */
