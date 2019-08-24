@@ -11,7 +11,7 @@ export default class Projects extends Component{
   toggleCategories() {
     if(this.state.activeTab === 0) { {/* WEB */}
       return (
-        <div className="projects-grid">
+        <div className="projects-grid" style={{textAlign: 'center'}}>
 
           {/* Project 0 */}
           <Project
