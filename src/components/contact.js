@@ -9,9 +9,9 @@ export default class Resume extends Component{
             <Cell coll={8} className="cell-1">
               <h2>Simon Hamery</h2>
               <img
-                src="https://media.licdn.com/dms/image/C4E03AQF4CW2UHOdTig/profile-displayphoto-shrink_200_200/0?e=1551312000&v=beta&t=S0d5ma29kon0YKY6uN6RC1l7ZhlKQ4atZcZhVeEl_xY"
+                src="/phone.jpg"
                 alt="avatar"
-                style={{height: '25%',borderRadius: '10%'}}
+                style={{height: '6%',borderRadius: '10%'}}
               />
             <p>
               "Communication is the key of success."
