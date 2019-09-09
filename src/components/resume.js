@@ -40,8 +40,8 @@ export default class Resume extends Component{
             <p>+33604143933</p>
             <h5>Email</h5>
             <p>shamery@free.fr</p>
-            <h5>Web</h5>
-            <p>shamzic.github.io</p>
+            <h5>Website</h5>
+            <p>simonhamery.com</p>
             <hr style={{borderTop: '3px solid #E48728', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -84,6 +84,12 @@ export default class Resume extends Component{
             />
             <hr style={{borderTop: '3px solid #472755'}}/>
             <h2> Experience </h2>
+              <Experience
+                startYear={"Feb 2019"}
+                endYear={"July 2019"}
+                jobName={"Front/back-end Web Developper"}
+                jobDescription={"I used Symfony framework with Javascript and Php to create new web interfaces inside a web plateform"}
+              />
               <Experience
                 startYear={"Sep 2017"}
                 endYear={"Now"}
